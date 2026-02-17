@@ -11,9 +11,9 @@ class PostSeeder extends Seeder
     {
         $posts = [
             [
-                'title_en' => 'SaaS Architecture: Scaling Laravel for Global Users',
+                'title_en' => 'Backend Optimization: Scaling Laravel for Global Users',
                 'title_ar' => 'معمارية SaaS: توسيع Laravel للمستخدمين العالميين',
-                'slug' => 'saas-architecture-scaling-laravel',
+                'slug' => 'backend-optimization-scaling-laravel',
                 'image' => 'assets/img/blog/saas_architecture.png',
                 'content_en' => '<h2>High-Performance Multi-Tenancy</h2><p>Scaling a SaaS platform requires more than just adding servers. It involves a deep understanding of database sharding, caching layers (Redis), and horizontal scaling. In Laravel, we leverage advanced Service Provider patterns to dynamically configure tenant resources.</p><h3>Key Scalability Components</h3><ul><li><strong>Database Sharding:</strong> Distributing tenant data across multiple database instances to prevent bottlenecks.</li><li><strong>Global CDN Integration:</strong> Reducing latency by serving static assets from edge locations.</li><li><strong>Queue Optimization:</strong> Using Horizon to manage thousands of concurrent background jobs efficiently.</li></ul><blockquote>"Scaling is not about handling more users; it is about maintainability under pressure."</blockquote>',
                 'content_ar' => '<h2>تعدد المستأجرين عالي الأداء</h2><p>توسيع منصة SaaS يتطلب أكثر من مجرد إضافة خوادم. يتضمن ذلك فهمًا عميقًا لتقسيم قواعد البيانات (Sharding)، وطبقات التخزين المؤقت (Redis)، والتوسع الأفقي. في Laravel، نستخدم أنماط متقدمة من Service Providers لتكوين موارد المستأجرين ديناميكيًا.</p><h3>مكونات التوسع الرئيسية</h3><ul><li><strong>تقسيم قواعد البيانات:</strong> توزيع بيانات المستأجرين عبر عدة خوادم لمنع الاختناقات.</li><li><strong>تكامل CDN العالمي:</strong> تقليل زمن الاستجابة من خلال خدمة الملفات الثابتة من أقرب موقع للمستخدم.</li><li><strong>تحسين الطوابير (Queues):</strong> استخدام Horizon لإدارة آلاف الوظائف الخلفية المتزامنة بكفاءة.</li></ul><blockquote>"التوسع لا يتعلق فقط بمعالجة المزيد من المستخدمين؛ بل بالحفاظ على قابلية الصيانة تحت الضغط."</blockquote>',
@@ -75,7 +75,7 @@ class PostSeeder extends Seeder
                 'title_ar' => 'ثقافة DevOps: CI/CD للمستقلين',
                 'slug' => 'devops-culture-cicd-freelancers',
                 'image' => 'assets/img/blog/cyber_security.png',
-                'content_en' => '<h2>Automating Your Workflow</h2><p>As a senior developer, manual deployments are your worst enemy. CI/CD pipelines ensure that every commit is tested, built, and deployed safely to production.</p><h3>GitHub Actions and Forge</h3><p>By combining GitHub Actions for testing and Laravel Forge for deployment, we create a "push to deploy" environment that guarantees zero human error during production releases.</p>',
+                'content_en' => '<h2>Automating Your Workflow</h2><p>As a developer, manual deployments are your worst enemy. CI/CD pipelines ensure that every commit is tested, built, and deployed safely to production.</p><h3>GitHub Actions and Forge</h3><p>By combining GitHub Actions for testing and Laravel Forge for deployment, we create a "push to deploy" environment that guarantees zero human error during production releases.</p>',
                 'content_ar' => '<h2>أتمتة سير العمل الخاص بك</h2><p>كمطور أول، فإن عمليات النشر اليدوية هي أسوأ أعدائك. تضمن خطوط أنابيب CI/CD اختبار كل التزام (Commit) وبنائه ونشره بأمان في بيئة الإنتاج.</p><h3>GitHub Actions و Forge</h3><p>من خلال الجمع بين GitHub Actions للاختبار و Laravel Forge للنشر، نقوم بإنشاء بيئة "Push to Deploy" تضمن عدم وجود خطأ بشري أثناء إصدارات الإنتاج.</p>',
                 'author' => 'Omar Ayman',
                 'tags_en' => ['DevOps', 'CI/CD', 'GitHub Actions'],

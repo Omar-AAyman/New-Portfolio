@@ -33,7 +33,7 @@ class ProjectsTableSeeder extends Seeder
                     'ar' => 'بناء نظام ERP متعدد المستأجرين قابل للتوسع لخدمة أكثر من 50 شركة مع صلاحيات معقدة وحجم بيانات ضخم.',
                 ]),
                 'solution' => json_encode([
-                    'en' => 'Architected 30+ dynamic modules using Filament v3. Implemented Redis caching for 40% faster load times and robust RBAC for tenant isolation.',
+                    'en' => 'Developed 30+ dynamic modules using Filament v3. Implemented Redis caching for 40% faster load times and robust RBAC for tenant isolation.',
                     'ar' => 'هندسة أكثر من 30 وحدة ديناميكية باستخدام Filament v3. تطبيق التخزين المؤقت (Redis) لتسريع الأداء بنسبة 40% ونظام صلاحيات صارم لعزل المستأجرين.',
                 ]),
                 'outcome' => json_encode([
@@ -85,7 +85,7 @@ class ProjectsTableSeeder extends Seeder
                     'ar' => 'بنية تحتية لتطبيقات الجوال',
                 ]),
                 'role' => json_encode([
-                    'en' => 'Systems Architect',
+                    'en' => 'Backend Developer',
                     'ar' => 'مهندس أنظمة',
                 ]),
                 'description' => json_encode([

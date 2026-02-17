@@ -204,7 +204,7 @@
             <tr>
                 <td class="footer">
                     <p style="margin-bottom: 10px;">&copy; {{ date('Y') }} Omar Ayman. All rights reserved.</p>
-                    <p style="margin-bottom: 15px;">SaaS Architecture • Fintech Solutions • Scalable Systems</p>
+                    <p style="margin-bottom: 15px;">SaaS Development • Fintech Solutions • Scalable Systems</p>
                     <div>
                         <a href="https://linkedin.com/in/omaraymn">LinkedIn</a> •
                         <a href="https://github.com/Omar-AAyman">GitHub</a> •

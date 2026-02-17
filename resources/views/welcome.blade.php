@@ -10,17 +10,39 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Omar Ayman">
+    <meta name="description"
+        content="Omar Ayman - Backend Developer specializing in Laravel, SaaS Development, and Scalable Fintech Solutions. Building high-performance digital products.">
+    <meta name="keywords"
+        content="Omar Ayman, Backend Developer, Laravel, SaaS Development, ERP Solutions, Fintech Developer, PHP, Cairo Developer">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="Omar Ayman - Backend Developer">
+    <meta property="og:description"
+        content="Backend Developer specializing in scalable Laravel APIs, SaaS infrastructure, and Fintech solutions. Turning complex requirements into reliable software.">
+    <meta property="og:image" content="{{ asset('assets/img/logo.png') }}">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="Omar Ayman - Backend Developer">
+    <meta property="twitter:description"
+        content="Expert in Laravel, SaaS Development, and Scalable Backend Systems. Check out my portfolio and complex project case studies.">
+    <meta property="twitter:image" content="{{ asset('assets/img/logo.png') }}">
+
     <!-- Page Title -->
     <title>{{ __('Omar Ayman - Personal Portfolio') }}</title>
     <!-- Favicon Icon -->
-    <link rel="icon" href="{{ asset('assets') }}/img/omar-ayman-logo.png" />
+    <link rel="icon" href="{{ asset('assets/img/omar-ayman-logo.png') }}" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/fontawesome.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/slick.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/lightgallery.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/animate.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/lightgallery.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 </head>
 
 <body id="home" class="st-get-sidebar">
@@ -30,7 +52,7 @@
             <div class="container">
                 <div class="st-main-header-in">
                     <div class="st-main-header-left">
-                        <div class="st-header-author"><img src="{{ asset('assets') }}/img/section/hero-img.jpeg"
+                        <div class="st-header-author"><img src="{{ asset('assets/img/section/hero-img.jpeg') }}"
                                 alt=""></div>
                     </div>
                     <div class="st-main-header-right">
@@ -116,32 +138,32 @@
                     <div class="slick-wrapper">
                         <div class="st-client-item">
                             <a href="https://v2.gap-cloud.com/welcome" target="_blank">
-                                <img src="{{ asset('assets/GAP CLOUD.png') }}" alt="Gap Cloud">
+                                <img src="{{ asset('assets/img/section/gap logo.png') }}" alt="Gap Cloud">
                             </a>
                         </div>
                         <div class="st-client-item">
                             <a href="https://nacitalogistic.com/" target="_blank">
-                                <img src="{{ asset('assets/logo nacita.png') }}" alt="Nacita Logistic">
+                                <img src="{{ asset('assets/img/section/new-logo-12.png') }}" alt="Nacita Logistic">
                             </a>
                         </div>
                         <div class="st-client-item">
                             <a href="https://www.seenapay.com/" target="_blank">
-                                <img src="{{ asset('assets/SEENA PAY.png') }}" alt="Seena Pay">
+                                <img src="{{ asset('assets/img/section/seenapay-logo.png') }}" alt="Seena Pay">
                             </a>
                         </div>
                         <div class="st-client-item">
                             <a href="https://beyond-pills.com/" target="_blank">
-                                <img src="{{ asset('assets/beyond bills.png') }}" alt="Beyond Pills">
+                                <img src="{{ asset('assets/img/client/client1.png') }}" alt="Beyond Pills">
                             </a>
                         </div>
                         <div class="st-client-item">
                             <a href="https://www.antifategypt.com/" target="_blank">
-                                <img src="{{ asset('assets/antifat.webp') }}" alt="Antifat Egypt">
+                                <img src="{{ asset('assets/img/client/client2.png') }}" alt="Antifat Egypt">
                             </a>
                         </div>
                         <div class="st-client-item">
                             <a href="https://fillosofer.com/" target="_blank">
-                                <img src="{{ asset('assets/fillosofer.png') }}" alt="Fillosofer">
+                                <img src="{{ asset('assets/img/client/client3.png') }}" alt="Fillosofer">
                             </a>
                         </div>
                         <div class="st-client-item">
@@ -182,7 +204,7 @@
                 <div class="col-lg-6 wow {{ App::isLocale('ar') ? 'fadeInRight' : 'fadeInLeft' }}">
                     <div class="st-about-img-wrap">
                         <div class="st-about-img st-dynamic-bg st-bg"
-                            data-src="{{ asset('assets') }}/img/section/about.png"></div>
+                            data-src="{{ asset('assets/img/section/about.png') }}"></div>
                     </div>
                     <div class="st-height-b0 st-height-lg-b30"></div>
                 </div>
@@ -192,7 +214,7 @@
                             <div class="st-text-block st-style1">
                                 <h2 class="st-text-block-title">{{ __('Hi There!') }} {{ __('I\'m') }}
                                     {{ __('Omar Ayman') }}</h2>
-                                <h4 class="st-text-block-subtitle">{{ __('Full-Stack Solutions Architect') }}</h4>
+                                <h4 class="st-text-block-subtitle">{{ __('Backend Developer') }}</h4>
                                 <div class="st-text-block-text">
                                     <p>{!! __('About Description') !!}</p>
                                 </div>
@@ -503,7 +525,7 @@
                 <div class="col-lg-6">
                     <div class="st-resume-wrap">
                         <div class="st-resume-heading">
-                            <img src="{{ asset('assets') }}/img/icon/resume-icon1.png" alt="resume-icon">
+                            <img src="{{ asset('assets/img/icon/resume-icon1.png') }}" alt="resume-icon">
                             <h2 class="st-resume-heading-title">{{ __('Experience') }}</h2>
                         </div>
 
@@ -562,7 +584,7 @@
                     <div class="st-height-b0 st-height-lg-b50"></div>
                     <div class="st-resume-wrap">
                         <div class="st-resume-heading">
-                            <img src="{{ asset('assets') }}/img/icon/resume-icon2.png" alt="resume-icon">
+                            <img src="{{ asset('assets/img/icon/resume-icon2.png') }}" alt="resume-icon">
                             <h2 class="st-resume-heading-title">{{ __('Education') }}</h2>
                         </div>
                         <div class="st-height-b50 st-height-lg-b30"></div>
@@ -636,7 +658,7 @@
                                 data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 <div class="st-testimonial-text">
                                     <p>“{{ __('Reviewer 1 Text') }}”</p>
-                                    <div class="st-quote"><img src="{{ asset('assets') }}/img/icon/quote.png"
+                                    <div class="st-quote"><img src="{{ asset('assets/img/icon/quote.png') }}"
                                             alt="quote"></div>
                                 </div>
                                 <div class="st-testimonial-info">
@@ -656,7 +678,7 @@
                                 data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 <div class="st-testimonial-text">
                                     <p>“{{ __('Reviewer 2 Text') }}”</p>
-                                    <div class="st-quote"><img src="{{ asset('assets') }}/img/icon/quote.png"
+                                    <div class="st-quote"><img src="{{ asset('assets/img/icon/quote.png') }}"
                                             alt="quote"></div>
                                 </div>
                                 <div class="st-testimonial-info">
@@ -676,7 +698,7 @@
                                 data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 <div class="st-testimonial-text">
                                     <p>“{{ __('Reviewer 3 Text') }}”</p>
-                                    <div class="st-quote"><img src="{{ asset('assets') }}/img/icon/quote.png"
+                                    <div class="st-quote"><img src="{{ asset('assets/img/icon/quote.png') }}"
                                             alt="quote"></div>
                                 </div>
                                 <div class="st-testimonial-info">
@@ -696,7 +718,7 @@
                                 data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 <div class="st-testimonial-text">
                                     <p>“{{ __('Reviewer 4 Text') }}”</p>
-                                    <div class="st-quote"><img src="{{ asset('assets') }}/img/icon/quote.png"
+                                    <div class="st-quote"><img src="{{ asset('assets/img/icon/quote.png') }}"
                                             alt="quote"></div>
                                 </div>
                                 <div class="st-testimonial-info">
@@ -716,7 +738,7 @@
                                 data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 <div class="st-testimonial-text">
                                     <p>“{{ __('Reviewer 5 Text') }}”</p>
-                                    <div class="st-quote"><img src="{{ asset('assets') }}/img/icon/quote.png"
+                                    <div class="st-quote"><img src="{{ asset('assets/img/icon/quote.png') }}"
                                             alt="quote"></div>
                                 </div>
                                 <div class="st-testimonial-info">
@@ -960,12 +982,12 @@
     <!-- End Footer Seciton -->
 
     <!-- Scripts -->
-    <script src="{{ asset('assets') }}/js/jquery-1.12.4.min.js"></script>
-    <script src="{{ asset('assets') }}/js/jquery.slick.min.js"></script>
-    <script src="{{ asset('assets') }}/js/lightgallery.min.js"></script>
-    <script src="{{ asset('assets') }}/js/wow.min.js"></script>
-    <script src="{{ asset('assets') }}/js/particles.min.js"></script>
-    <script src="{{ asset('assets') }}/js/main.js"></script>
+    <script src="{{ asset('assets/js/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.slick.min.js') }}"></script>
+    <script src="{{ asset('assets/js/lightgallery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/js/particles.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
     <script>
         $(document).ready(function() {
             // Download CV Button Loader

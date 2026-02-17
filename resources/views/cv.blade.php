@@ -249,7 +249,7 @@
         <!-- Header -->
         <header>
             <h1>OMAR AYMAN MOHAMED</h1>
-            <div class="role-title">BACK-END ENGINEER | SAAS ARCHITECTURE • LARAVEL • FINTECH SYSTEMS</div>
+            <div class="role-title">BACKEND DEVELOPER | SAAS & FINTECH SYSTEMS • LARAVEL • PHP</div>
             <div class="contact-row">
                 Cairo, Egypt (Open to relocation & remote) <span>|</span> Phone: <span id="cv-phone">Loading...</span>
                 <span>|</span> Email:
