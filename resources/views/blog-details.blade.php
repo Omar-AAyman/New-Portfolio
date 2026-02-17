@@ -68,6 +68,13 @@
                                 <li><a href='{{ route('home') }}#portfolio'>{{ __('Portfolio') }}</a></li>
                                 <li><a href='{{ route('home') }}#blog'>{{ __('Blog') }}</a></li>
                                 <li><a href='{{ route('home') }}#contact'>{{ __('Contact') }}</a></li>
+                                @if (App::getLocale() == 'en')
+                                    <li><a href="{{ route('lang.switch', 'ar') }}"
+                                            class="st-language-switch">العربية</a></li>
+                                @else
+                                    <li><a href="{{ route('lang.switch', 'en') }}"
+                                            class="st-language-switch">English</a></li>
+                                @endif
                             </ul>
                         </div>
                     </div>

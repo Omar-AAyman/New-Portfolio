@@ -2,9 +2,7 @@
 <html class="no-js" lang="{{ App::getLocale() }}" dir="{{ App::getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
 
 
-<!-- Mirrored from Omar-html.netlify.app/index2 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Feb 2026 00:23:00 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 
 <head>
     <!-- Meta Tags -->
@@ -70,11 +68,17 @@
             <div class="st-hero-text">
                 <h1>{{ __('Hi, I am') }} <span>{{ __('Omar Ayman') }}</span></h1>
                 <p>{!! __('Hero Description') !!}</p>
+                <div class="st-hero-btn-group" style="margin-bottom: 20px;">
+                    <a href="{{ asset('assets/pdf/cv.pdf') }}" class="st-btn st-style1 st-color1 st-smooth-move"
+                        target="_blank">{{ __('Download CV') }} <i class="fas fa-download"
+                            style="margin-left:8px;"></i></a>
+                </div>
                 <div class="st-hero-social-links">
                     {{-- <a href="https://www.facebook.com/OmarAymn.me" class="st-social-btn" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a> --}}
-                    <a href="https://www.linkedin.com/in/omaraymn-789725183" class="st-social-btn" target="_blank">
+                    <a href="https://www.linkedin.com/in/omar-ayman-%F0%9F%87%B5%F0%9F%87%B8-789725183"
+                        class="st-social-btn" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/Omar-AAyman" class="st-social-btn" target="_blank">
@@ -101,6 +105,67 @@
         <div id="particles-js"></div>
     </section>
     <!-- End Hero Seciton -->
+
+    <!-- Start Clients Slider -->
+    <div class="st-clients-wrap st-gray-bg">
+        <div class="container">
+            <div class="st-slider st-style1">
+                <div class="slick-container" data-autoplay="2000" data-loop="1" data-speed="1000" data-center="0"
+                    data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="3" data-md-slides="4"
+                    data-lg-slides="5" data-add-slides="5">
+                    <div class="slick-wrapper">
+                        <div class="st-client-item">
+                            <a href="https://v2.gap-cloud.com/welcome" target="_blank">
+                                <img src="{{ asset('assets/GAP CLOUD.png') }}" alt="Gap Cloud">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://nacitalogistic.com/" target="_blank">
+                                <img src="{{ asset('assets/logo nacita.png') }}" alt="Nacita Logistic">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://www.seenapay.com/" target="_blank">
+                                <img src="{{ asset('assets/SEENA PAY.png') }}" alt="Seena Pay">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://beyond-pills.com/" target="_blank">
+                                <img src="{{ asset('assets/beyond bills.png') }}" alt="Beyond Pills">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://www.antifategypt.com/" target="_blank">
+                                <img src="{{ asset('assets/antifat.webp') }}" alt="Antifat Egypt">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://fillosofer.com/" target="_blank">
+                                <img src="{{ asset('assets/fillosofer.png') }}" alt="Fillosofer">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://acapsia.azurewebsites.net/" target="_blank">
+                                <img src="{{ asset('assets/marchdair.png') }}" alt="Acapsia">
+                            </a>
+                        </div>
+                        <div class="st-client-item">
+                            <a href="https://ecoc-site.com/" target="_blank">
+                                <img src="{{ asset('assets/ecoc.png') }}" alt="ECOC">
+                            </a>
+                        </div>
+                        {{-- <div class="st-client-item">
+                            <a href="https://lubnabeautycenter.free.nf/" target="_blank">
+                                <img src="{{ asset('assets/lubna-loogo-1-e1752155323816.png') }}"
+                                    alt="Lubna Beauty Center">
+                            </a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients Slider -->
 
     <!-- Start About Seciton -->
     <section id="about" class="st-about-wrap">
@@ -129,12 +194,21 @@
                                     {{ __('Omar Ayman') }}</h2>
                                 <h4 class="st-text-block-subtitle">{{ __('Full-Stack Solutions Architect') }}</h4>
                                 <div class="st-text-block-text">
-                                    <p>{{ __('About Description') }}</p>
+                                    <p>{!! __('About Description') !!}</p>
                                 </div>
                                 <ul class="st-text-block-details st-mp0">
-                                    <li><span>{{ __('Phone') }}</span> : <span
-                                            style="direction: ltr; display: inline-block;">+20 11 4968 5494</span></li>
-                                    <li><span>{{ __('Email') }}</span> : <span>Omaraymn411@gmail.com</span></li>
+                                    <li><span>{{ __('Phone') }}</span> : <span id="about-phone"
+                                            style="direction: ltr; display: inline-block;">Loading...</span></li>
+                                    <li><span>{{ __('Email') }}</span> : <span id="about-email">Loading...</span>
+                                    </li>
+                                    <script>
+                                        (function() {
+                                            var u = 'Omaraymn411',
+                                                d = 'gmail.com';
+                                            document.getElementById('about-email').innerHTML = u + '@' + d;
+                                            document.getElementById('about-phone').innerText = '+20 11 4968 5494';
+                                        })();
+                                    </script>
                                     <li><span>{{ __('From') }}</span> : <span>{{ __('Cairo, Egypt') }}</span></li>
                                     <li><span>{{ __('Language') }}</span> : <span>{{ __('Arabic, English') }}</span>
                                     </li>
@@ -228,6 +302,78 @@
     </section>
     <!-- End Service Seciton -->
 
+    <!-- Start Portfolio Seciton -->
+    @if ($projects->count())
+        <section id="portfolio" class="st-dark-bg">
+            <div class="st-height-b100 st-height-lg-b80"></div>
+            <div class="container">
+                <div class="st-section-heading st-style1">
+                    <h4 class="st-section-heading-title">{{ __('PORTFOLIOS') }}</h4>
+                    <h2 class="st-section-heading-subtitle">{{ __('PORTFOLIOS') }}</h2>
+                </div>
+                <div class="st-height-b25 st-height-lg-b25"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    @foreach ($projects as $project)
+                        <div class="col-lg-6 col-md-10 col-12 mb-4">
+                            <div class="st-project-card st-style1 wow fadeInUp" data-wow-duration="0.8s"
+                                data-wow-delay="0.2s">
+                                <div class="st-project-card-body">
+                                    <div class="st-project-meta">
+                                        <span class="st-project-role">{{ $project->getLocalized('role') }}</span>
+                                        <h3 class="st-project-title">{{ $project->getLocalized('title') }}</h3>
+                                    </div>
+
+                                    <div class="st-project-content">
+                                        <div class="st-project-section">
+                                            <h4><i class="fas fa-exclamation-triangle"></i> {{ __('Problem') }}</h4>
+                                            <p>{{ $project->getLocalized('problem') }}</p>
+                                        </div>
+                                        <div class="st-project-section">
+                                            <h4><i class="fas fa-cogs"></i> {{ __('Solution') }}</h4>
+                                            <p>{{ $project->getLocalized('solution') }}</p>
+                                        </div>
+                                        <div class="st-project-section st-highlight">
+                                            <h4><i class="fas fa-chart-line"></i> {{ __('Outcome') }}</h4>
+                                            <p>{{ $project->getLocalized('outcome') }}</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="st-project-footer">
+                                        <div class="st-tech-stack">
+                                            @foreach ($project->tech_stack as $tech)
+                                                <span class="st-tech-tag">{{ trim($tech) }}</span>
+                                            @endforeach
+                                        </div>
+                                        @if ($project->video_url)
+                                            <div class="st-lightgallery">
+                                                <a href="{{ $project->video_url }}"
+                                                    class="st-btn st-style1 st-color1 st-sm st-lightbox-item">
+                                                    <i class="fas fa-play-circle"></i> {{ __('Watch Demo') }}
+                                                </a>
+                                            </div>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                    @if ($projects->count() > 6)
+                        <div class="col-lg-12 text-center">
+                            <div class="st-portfolio-btn">
+                                <a href="#contact" class="st-btn st-style1 st-color1">{{ __('Load More') }}</a>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+            <div class="st-height-b100 st-height-lg-b80"></div>
+        </section>
+    @endif
+    <!-- End Portfolio Seciton -->
+
     <!-- Start Skill Seciton -->
     <section class="st-dark-bg">
         <div class="st-height-b100 st-height-lg-b80"></div>
@@ -246,7 +392,7 @@
                         <div class="st-skill-heading">
                             <h2 class="st-skill-title">{{ __('Expertise in Laravel Ecosystem') }}</h2>
                             <div class="st-skill-subtitle">
-                                {{ __('Skills Description') }}
+                                {!! __('Skills Description') !!}
                             </div>
                         </div><!-- .st-skill-heading -->
                     </div>
@@ -379,8 +525,8 @@
                                 <h4 class="st-resume-timeline-subtitle">
                                     <a href="https://gap-cloud.com" target="_blank" class="st-resume-link">
                                         <div class="st-resume-icon-wrap st-gap-icon">
-                                            <img src="{{ asset('assets/img/section/gap logo.png') }}" alt="Gap Cloud"
-                                                class="st-resume-logo">
+                                            <img src="{{ asset('assets/img/section/gap logo.png') }}"
+                                                alt="Gap Cloud" class="st-resume-logo">
                                         </div>
                                         {{ __('Gap Cloud – SaaS ERP Platform') }}
                                     </a>
@@ -464,132 +610,6 @@
     </section>
     <!-- End Resume Seciton -->
 
-    <!-- Start Portfolio Seciton -->
-    <section id="portfolio">
-        <div class="st-height-b100 st-height-lg-b80"></div>
-        <div class="container">
-            <div class="st-section-heading st-style1">
-                <h4 class="st-section-heading-title">{{ __('PORTFOLIOS') }}</h4>
-                <h2 class="st-section-heading-subtitle">{{ __('PORTFOLIOS') }}</h2>
-            </div>
-            <div class="st-height-b25 st-height-lg-b25"></div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="{{ asset('assets') }}/img/portfolio/portfolio1_lg.jpg"
-                                class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="{{ asset('assets') }}/img/portfolio/portfolio1.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>{{ __('Product Design') }}</h5>
-                                    <p>{{ __('Design / Marketing') }}</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="{{ asset('assets') }}/img/portfolio/portfolio2_lg.jpg"
-                                class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="{{ asset('assets') }}/img/portfolio/portfolio2.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="{{ asset('assets') }}/img/portfolio/portfolio3_lg.jpg"
-                                class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="{{ asset('assets') }}/img/portfolio/portfolio3.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="{{ asset('assets') }}/img/portfolio/portfolio4_lg.jpg"
-                                class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="{{ asset('assets') }}/img/portfolio/portfolio4.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="{{ asset('assets') }}/img/portfolio/portfolio5_lg.jpg"
-                                class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="{{ asset('assets') }}/img/portfolio/portfolio5.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="st-portfolio-single st-style1 st-lightgallery">
-                        <div class="st-portfolio-item">
-                            <a href="{{ asset('assets') }}/img/portfolio/portfolio6_lg.jpg"
-                                class="st-portfolio st-zoom st-lightbox-item">
-                                <div class="st-portfolio-img st-zoom-in">
-                                    <img src="{{ asset('assets') }}/img/portfolio/portfolio6.jpg" alt="portfolio">
-                                </div>
-                                <div class="st-portfolio-item-hover">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <h5>Product Design</h5>
-                                    <p>Design / Marketing</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 text-center">
-                    <div class="st-portfolio-btn">
-                        <div class="st-portfolio-btn">
-                            <a href="#" class="st-btn st-style1 st-color1">{{ __('Load More') }}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="st-height-b100 st-height-lg-b80"></div>
-    </section>
-    <!-- End Portfolio Seciton -->
 
     <!-- Start Review Seciton -->
     <section class="st-dark-bg">
@@ -747,59 +767,62 @@
     <!-- End Review Seciton -->
 
     <!-- Start Blog Seciton -->
-    <section id="blog">
-        <div class="st-height-b100 st-height-lg-b80"></div>
-        <div class="container">
-            <div class="st-section-heading st-style1">
-                <h4 class="st-section-heading-title">{{ __('BLOG') }}</h4>
-                <h2 class="st-section-heading-subtitle">{{ __('LATEST NEWS') }}</h2>
-            </div>
-            <div class="st-height-b25 st-height-lg-b25"></div>
-        </div>
-
-        <!-- Latest News Container -->
-
-        <div class="container">
-            <div class="st-slider st-style1">
-                <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"
-                    data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3"
-                    data-lg-slides="3" data-add-slides="3">
-                    <div class="slick-wrapper">
-                        @foreach ($posts as $post)
-                            <div class="slick-slide-in">
-                                <div class="st-post-single st-style1">
-                                    <a class='st-post-thumb st-zoom' href='{{ route('blog.show', $post->slug) }}'>
-                                        <img src="{{ asset($post->image) }}" class="st-zoom-in"
-                                            alt="{{ $post->{'title_' . app()->getLocale()} }}">
-                                    </a>
-                                    <div class="st-post-info">
-                                        <div class="st-post-date">
-                                            {{ __('By') }}:
-                                            <a href="#" class="st-post-author">{{ $post->author }}</a>
-                                            <span class="st-post-date-divider">|</span>
-                                            <span
-                                                class="st-post-publish-date">{{ $post->published_at->format('d-m-Y') }}</span>
-                                        </div>
-                                        <h4 class="st-post-title"><a
-                                                href='{{ route('blog.show', $post->slug) }}'>{{ $post->{'title_' . app()->getLocale()} }}</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div><!-- .slick-slide-in -->
-                        @endforeach
-                    </div>
-                </div><!-- .slick-container -->
-                <div class="pagination st-style1 st-flex st-hidden"></div>
-                <!-- If dont need Pagination then add class .st-hidden -->
-                <div class="swipe-arrow st-style1">
-                    <!-- If dont need navigation then add class .st-hidden -->
-                    <div class="slick-arrow-left"><i class="fa fa-chevron-left"></i></div>
-                    <div class="slick-arrow-right"><i class="fa fa-chevron-right"></i></div>
+    @if ($posts->count())
+        <section id="blog">
+            <div class="st-height-b100 st-height-lg-b80"></div>
+            <div class="container">
+                <div class="st-section-heading st-style1">
+                    <h4 class="st-section-heading-title">{{ __('BLOG') }}</h4>
+                    <h2 class="st-section-heading-subtitle">{{ __('LATEST NEWS') }}</h2>
                 </div>
-            </div><!-- .st-slider -->
-        </div>
-        <div class="st-height-b95 st-height-lg-b75"></div>
-    </section>
+                <div class="st-height-b25 st-height-lg-b25"></div>
+            </div>
+
+            <!-- Latest News Container -->
+
+            <div class="container">
+                <div class="st-slider st-style1">
+                    <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"
+                        data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3"
+                        data-lg-slides="3" data-add-slides="3">
+                        <div class="slick-wrapper">
+                            @foreach ($posts as $post)
+                                <div class="slick-slide-in">
+                                    <div class="st-post-single st-style1">
+                                        <a class='st-post-thumb st-zoom'
+                                            href='{{ route('blog.show', $post->slug) }}'>
+                                            <img src="{{ asset($post->image) }}" class="st-zoom-in"
+                                                alt="{{ $post->{'title_' . app()->getLocale()} }}">
+                                        </a>
+                                        <div class="st-post-info">
+                                            <div class="st-post-date">
+                                                {{ __('By') }}:
+                                                <a href="#" class="st-post-author">{{ $post->author }}</a>
+                                                <span class="st-post-date-divider">|</span>
+                                                <span
+                                                    class="st-post-publish-date">{{ $post->published_at->format('d-m-Y') }}</span>
+                                            </div>
+                                            <h4 class="st-post-title"><a
+                                                    href='{{ route('blog.show', $post->slug) }}'>{{ $post->{'title_' . app()->getLocale()} }}</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div><!-- .slick-slide-in -->
+                            @endforeach
+                        </div>
+                    </div><!-- .slick-container -->
+                    <div class="pagination st-style1 st-flex st-hidden"></div>
+                    <!-- If dont need Pagination then add class .st-hidden -->
+                    <div class="swipe-arrow st-style1">
+                        <!-- If dont need navigation then add class .st-hidden -->
+                        <div class="slick-arrow-left"><i class="fa fa-chevron-left"></i></div>
+                        <div class="slick-arrow-right"><i class="fa fa-chevron-right"></i></div>
+                    </div>
+                </div><!-- .st-slider -->
+            </div>
+            <div class="st-height-b95 st-height-lg-b75"></div>
+        </section>
+    @endif
     <!-- End Blog Seciton -->
 
     <!-- Start Contact Seciton -->
@@ -860,14 +883,28 @@
                             <i class="fas fa-envelope"></i>
                             <div class="st-single-info-details">
                                 <h4>{{ __('Email') }}</h4>
-                                <a href="mailto:Omaraymn411@gmail.com">Omaraymn411@gmail.com</a>
+                                <span id="footer-email">Loading...</span>
+                                <script>
+                                    (function() {
+                                        var u = 'Omaraymn411',
+                                            d = 'gmail.com';
+                                        document.getElementById('footer-email').innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d +
+                                            '</a>';
+                                    })();
+                                </script>
                             </div>
                         </div>
                         <div class="st-single-contact-info">
                             <i class="fas fa-phone-alt"></i>
                             <div class="st-single-info-details">
                                 <h4>{{ __('Phone') }}</h4>
-                                <a href="tel:+201149685494">+20 114 968 5494</a>
+                                <span id="footer-phone"
+                                    style="direction: ltr; display: inline-block;">Loading...</span>
+                                <script>
+                                    (function() {
+                                        document.getElementById('footer-phone').innerHTML = '<a href="tel:+201149685494">+20 114 968 5494</a>';
+                                    })();
+                                </script>
                             </div>
                         </div>
                         <div class="st-single-contact-info">
@@ -995,7 +1032,7 @@
                             errorMessage += '</ul>';
                         } else if (xhr.status === 429) {
                             errorMessage =
-                                'Too many requests. Please wait a moment before trying again.';
+                                '{{ __('Too many requests. Please wait a moment before trying again.') }}';
                         }
 
                         alertBox.html(errorMessage).addClass('alert alert-danger');

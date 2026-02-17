@@ -14,9 +14,10 @@ class HomeController extends Controller
     public function index()
     {
         $posts = \App\Models\Post::latest('published_at')->get();
-        return view('welcome', compact('posts'));
-    }
+        $projects = \App\Models\Project::orderBy('display_order')->get();
 
+        return view('welcome', compact('posts', 'projects'));
+    }
 
     public function sendMessage(ContactFormRequest $request)
     {
@@ -34,7 +35,7 @@ class HomeController extends Controller
 
         try {
             Mail::to(config('app.admin_email'))->send(new AdminContactMail($validated));
-            
+
             $locale = app()->getLocale();
             Mail::to($validated['email'])->send(new CustomerContactMail($validated, $locale));
         } catch (\Exception $e) {

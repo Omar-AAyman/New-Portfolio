@@ -18,3 +18,8 @@ Route::get('lang/{locale}', function ($locale) {
 
     return $section ? $redirect->withFragment($section) : $redirect;
 })->name('lang.switch');
+
+Route::get('/cv', function () {
+    $projects = \App\Models\Project::orderBy('display_order')->get();
+    return view('cv', compact('projects'));
+})->name('cv.show');

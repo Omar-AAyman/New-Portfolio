@@ -3,33 +3,41 @@
 @section('title', 'New Inquiry')
 
 @section('content')
-    <p style="font-size: 18px; margin-bottom: 20px;">You've received a new strategic inquiry via your portfolio.</p>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 5px;">New Portfolio Inquiry</h2>
+        <span
+            style="background: rgba(190, 42, 45, 0.2); color: #BE2A2D; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid rgba(190, 42, 45, 0.3);">Action
+            Required</span>
+    </div>
 
-    <table class="info-table">
-        <tr>
-            <td class="info-label">Name</td>
-            <td class="info-value">{{ $data['name'] }}</td>
-        </tr>
-        <tr>
-            <td class="info-label">Email</td>
-            <td class="info-value">{{ $data['email'] }}</td>
-        </tr>
-        <tr>
-            <td class="info-label">Phone</td>
-            <td class="info-value">{{ $data['phone'] }}</td>
-        </tr>
-        <tr>
-            <td class="info-label">Subject</td>
-            <td class="info-value">{{ $data['subject'] }}</td>
-        </tr>
-    </table>
+    <div class="data-card">
+        <div class="data-row">
+            <span class="data-label">Sender Name</span>
+            <span class="data-value">{{ $data['name'] }}</span>
+        </div>
+        <div class="data-row">
+            <span class="data-label">Email Address</span>
+            <span class="data-value"><a href="mailto:{{ $data['email'] }}"
+                    style="color: #fff; text-decoration: none;">{{ $data['email'] }}</a></span>
+        </div>
+        <div class="data-row">
+            <span class="data-label">Phone Number</span>
+            <span class="data-value">{{ $data['phone'] }}</span>
+        </div>
+        <div class="data-row">
+            <span class="data-label">Subject</span>
+            <span class="data-value">{{ $data['subject'] }}</span>
+        </div>
+    </div>
 
-    <p class="info-label">Project Brief / Message:</p>
-    <div class="message-box">
+    <p
+        style="color: #888; font-size: 13px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">
+        Message Content</p>
+    <div style="background: #222; padding: 20px; border-radius: 8px; color: #ddd; border-left: 3px solid #BE2A2D;">
         "{{ $data['msg'] }}"
     </div>
 
-    <div style="text-align: center; margin-top: 30px;">
-        <a href="mailto:{{ $data['email'] }}" class="button">Reply to Client</a>
+    <div style="text-align: center; margin-top: 35px;">
+        <a href="mailto:{{ $data['email'] }}" class="button">Reply to Lead</a>
     </div>
 @endsection

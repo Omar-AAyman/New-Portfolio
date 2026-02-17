@@ -3,26 +3,27 @@
 @section('title', __('Thank You'))
 
 @section('content')
-    <p style="font-size: 18px; margin-bottom: 20px;">
-        {{ __('Hi There!') }} {{ $data['name'] }},
+    <p style="font-size: 18px; color: #fff; font-weight: 600; margin-bottom: 15px;">
+        {{ __('Hi There!') }} <span class="highlight">{{ $data['name'] }}</span>,
     </p>
 
-    <p style="line-height: 1.8; color: #ccc;">
-        {{ __('Thank you for reaching out. I appreciate your interest and will review your message as soon as possible. You can expect a response from me shortly.') }}
-    </p>
+    <p>{{ __('Thank you for getting in touch. I have received your message and will review it shortly.') }}</p>
+    <p>{{ __('I typically respond within 24 hours. Below is a copy of your inquiry for your records:') }}</p>
 
-    <div style="background-color: #252525; padding: 20px; border-radius: 8px; margin-top: 30px; border: 1px solid #333;">
-        <p style="margin-top: 0; color: #BE2A2D; font-weight: bold;">{{ __('Your Message Summary:') }}</p>
-        <p style="margin-bottom: 5px; color: #aaa;"><span style="color: #888;">{{ __('Subject') }}:</span>
-            {{ $data['subject'] }}</p>
-        <div style="color: #ddd; font-style: italic; margin-top: 10px; padding-left: 15px; border-left: 2px solid #444;">
+    <div class="data-card" style="margin-top: 25px;">
+        <div class="data-row">
+            <span class="data-label">{{ __('Subject') }}</span>
+            <span class="data-value">{{ $data['subject'] }}</span>
+        </div>
+        <div style="padding-top: 15px; color: #ccc; font-style: italic; line-height: 1.6;">
             "{{ $data['msg'] }}"
         </div>
     </div>
 
-    <div style="text-align: center; margin-top: 40px;">
-        <p style="color: #888; font-size: 14px; margin-bottom: 15px;">{{ __('Need immediate assistance?') }}</p>
-        <a href="https://wa.me/201149685494" class="button"
-            style="background-color: #25d366; color: #fff;">{{ __('WhatsApp Me') }}</a>
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 30px;">
+        <p style="color: #888; font-size: 13px; margin-bottom: 15px;">{{ __('Need a faster response?') }}</p>
+        <a href="https://wa.me/201149685494" class="button" style="background-color: #25d366; margin-top: 0;">
+            {{ __('Chat on WhatsApp') }}
+        </a>
     </div>
 @endsection

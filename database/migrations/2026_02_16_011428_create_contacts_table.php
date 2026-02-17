@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('subject');
-            $table->text('message'); // Using 'message' to store the 'msg' input
+            $table->text('message');
             $table->timestamps();
         });
     }

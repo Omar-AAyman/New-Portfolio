@@ -1298,9 +1298,9 @@ canvas {
 
 /* ANIMATIONS */
 .x1 {
-  -webkit-animation: animateBubble 25s linear infinite,
+  -webkit-animation: animateBubble 25s linear infinite -21s,
     sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 25s linear infinite,
+  animation: animateBubble 25s linear infinite -21s,
     sideWays 2s ease-in-out infinite alternate;
   left: -5%;
   top: 5%;
@@ -1309,9 +1309,9 @@ canvas {
 }
 
 .x2 {
-  -webkit-animation: animateBubble 20s linear infinite,
+  -webkit-animation: animateBubble 20s linear infinite -10s,
     sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 20s linear infinite,
+  animation: animateBubble 20s linear infinite -10s,
     sideWays 4s ease-in-out infinite alternate;
   left: 5%;
   top: 80%;
@@ -1320,9 +1320,9 @@ canvas {
 }
 
 .x3 {
-  -webkit-animation: animateBubble 28s linear infinite,
+  -webkit-animation: animateBubble 28s linear infinite -5s,
     sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 28s linear infinite,
+  animation: animateBubble 28s linear infinite -5s,
     sideWays 2s ease-in-out infinite alternate;
   left: 10%;
   top: 40%;
@@ -1331,9 +1331,9 @@ canvas {
 }
 
 .x4 {
-  -webkit-animation: animateBubble 22s linear infinite,
+  -webkit-animation: animateBubble 22s linear infinite -18s,
     sideWays 3s ease-in-out infinite alternate;
-  animation: animateBubble 22s linear infinite,
+  animation: animateBubble 22s linear infinite -18s,
     sideWays 3s ease-in-out infinite alternate;
   left: 20%;
   top: 0;
@@ -1342,9 +1342,9 @@ canvas {
 }
 
 .x5 {
-  -webkit-animation: animateBubble 29s linear infinite,
+  -webkit-animation: animateBubble 29s linear infinite -12s,
     sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 29s linear infinite,
+  animation: animateBubble 29s linear infinite -12s,
     sideWays 4s ease-in-out infinite alternate;
   left: 30%;
   top: 50%;
@@ -1353,9 +1353,9 @@ canvas {
 }
 
 .x6 {
-  -webkit-animation: animateBubble 21s linear infinite,
+  -webkit-animation: animateBubble 21s linear infinite -2s,
     sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 21s linear infinite,
+  animation: animateBubble 21s linear infinite -2s,
     sideWays 2s ease-in-out infinite alternate;
   left: 50%;
   top: 0;
@@ -1364,9 +1364,9 @@ canvas {
 }
 
 .x7 {
-  -webkit-animation: animateBubble 20s linear infinite,
+  -webkit-animation: animateBubble 20s linear infinite -15s,
     sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 20s linear infinite,
+  animation: animateBubble 20s linear infinite -15s,
     sideWays 2s ease-in-out infinite alternate;
   left: 65%;
   top: 70%;
@@ -1375,9 +1375,9 @@ canvas {
 }
 
 .x8 {
-  -webkit-animation: animateBubble 22s linear infinite,
+  -webkit-animation: animateBubble 22s linear infinite -8s,
     sideWays 3s ease-in-out infinite alternate;
-  animation: animateBubble 22s linear infinite,
+  animation: animateBubble 22s linear infinite -8s,
     sideWays 3s ease-in-out infinite alternate;
   left: 80%;
   top: 10%;
@@ -1386,9 +1386,9 @@ canvas {
 }
 
 .x9 {
-  -webkit-animation: animateBubble 29s linear infinite,
+  -webkit-animation: animateBubble 29s linear infinite -25s,
     sideWays 4s ease-in-out infinite alternate;
-  animation: animateBubble 29s linear infinite,
+  animation: animateBubble 29s linear infinite -25s,
     sideWays 4s ease-in-out infinite alternate;
   left: 90%;
   top: 50%;
@@ -1397,9 +1397,9 @@ canvas {
 }
 
 .x10 {
-  -webkit-animation: animateBubble 26s linear infinite,
+  -webkit-animation: animateBubble 26s linear infinite -19s,
     sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 26s linear infinite,
+  animation: animateBubble 26s linear infinite -19s,
     sideWays 2s ease-in-out infinite alternate;
   left: 80%;
   top: 80%;
@@ -1751,9 +1751,8 @@ canvas {
   border: 0.5px solid #3f4551;
   border-radius: 50%;
   background-color: #070d1b;
-  margin: auto;
+  margin: 0 auto 28px auto;
   font-size: 50px;
-  margin-bottom: 28px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -3559,4 +3558,374 @@ html[lang='ar'] .st-social-link .st-social-btn.active {
   direction: ltr;
   display: inline-block;
   unicode-bidi: embed;
+}
+
+/*--------------------------------------------------------------
+24. Project Cards (New)
+----------------------------------------------------------------*/
+.st-project-card {
+  background: #101624;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1f2738;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.st-project-card:hover {
+  transform: translateY(-5px);
+  border-color: #BE2A2D;
+  box-shadow: 0 10px 30px rgba(190, 42, 45, 0.15);
+}
+
+.st-project-card-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.st-project-meta {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #1f2738;
+  padding-bottom: 20px;
+}
+
+.st-project-role {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #BE2A2D;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.st-project-title {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+.st-project-content {
+  flex-grow: 1;
+}
+
+.st-project-section {
+  margin-bottom: 20px;
+}
+
+.st-project-section h4 {
+  font-size: 16px;
+  color: #a9adb8;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.st-project-section h4 i {
+  color: #BE2A2D;
+  font-size: 14px;
+}
+
+.st-project-section p {
+  font-size: 15px;
+  color: #d8dbe2;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.st-project-section.st-highlight {
+  background: rgba(190, 42, 45, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 3px solid #BE2A2D;
+}
+
+.st-project-section.st-highlight p {
+  color: #fff;
+}
+
+.st-project-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #1f2738;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.st-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.st-tech-tag {
+  background: #1f2738;
+  color: #a9adb8;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.st-project-card:hover .st-tech-tag {
+  background: #BE2A2D;
+  color: #fff;
+}
+
+/* Adjustments for clarity */
+.st-hero h1 span,
+.st-section-heading-title {
+  color: #BE2A2D !important;
+}
+
+.st-btn.st-style1.st-color1 {
+  background-color: #BE2A2D;
+  color: #fff;
+}
+
+.st-btn.st-style1.st-color1:hover {
+  background-color: #fff;
+  color: #BE2A2D;
+}
+
+.st-text-color-theme {
+  color: #BE2A2D !important;
+  font-weight: 700;
+}
+
+
+/*--------------------------------------------------------------
+25. Clients Marquee
+----------------------------------------------------------------*/
+.st-clients-wrap {
+  background-color: #070d1b;
+  padding: 50px 0;
+  overflow: hidden;
+  border-top: 1px solid #1f2738;
+  border-bottom: 1px solid #1f2738;
+}
+
+.st-client-marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.st-client-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.st-client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.st-client-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.st-client-item img {
+  max-height: 50px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.st-client-marquee:hover .st-client-track {
+  animation-play-state: paused;
+}
+
+
+/*--------------------------------------------------------------
+25. Client Carousel (Slick/Owl)
+----------------------------------------------------------------*/
+.st-client-carousel .st-client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+}
+
+.st-client-carousel .st-client-item img {
+  max-height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.st-client-carousel .st-client-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.st-clients-wrap {
+  padding: 60px 0;
+  border-top: 1px solid #1f2738;
+  border-bottom: 1px solid #1f2738;
+}
+
+
+/*--------------------------------------------------------------
+25. Client Grid (Gallery Style)
+----------------------------------------------------------------*/
+.st-client-item-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.st-client-item-grid:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #1f2738;
+}
+
+.st-client-item-grid img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.st-client-item-grid:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.style-alignment-center {
+  justify-content: center;
+}
+
+
+/*--------------------------------------------------------------
+25. Client Slider Style
+----------------------------------------------------------------*/
+.st-slider .st-client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 120px;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.st-slider .st-client-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #1f2738;
+}
+
+.st-slider .st-client-item img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.st-slider .st-client-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+/* Fix for logo visibility on dark background */
+.st-slider .st-client-item img {
+  filter: grayscale(100%) brightness(200%) contrast(0%) brightness(200%);
+  /* Force light grey/white */
+  opacity: 0.7;
+}
+
+.st-slider .st-client-item:hover img {
+  filter: grayscale(0%) brightness(100%) contrast(100%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+/* Normalized Logo Styling */
+.st-slider .st-client-item img {
+  /* Reset restrictive sizing since images are now canvases */
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  /* Maintain visibility fixes */
+  filter: grayscale(100%) brightness(200%) contrast(0%) brightness(200%);
+  opacity: 0.8;
+}
+
+.st-slider .st-client-item:hover img {
+  filter: grayscale(0%) brightness(100%) contrast(100%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+/* --- RTL FIXES --- */
+/* Force LTR for LightGallery to prevent position bugs */
+.lg-outer {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Ensure Icons use correct font in RTL mode */
+
+html[dir='rtl'] .fab {
+  font-family: 'Font Awesome 5 Brands' !important;
+}
+
+html[dir='rtl'] .fa,
+html[dir='rtl'] .fas {
+  font-family: 'Font Awesome 5 Free' !important;
+}
+
+html[dir='rtl'] .lg-icon {
+  font-family: 'lg' !important;
 }
