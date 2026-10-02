@@ -260,7 +260,7 @@
                             d = 'gmail.com';
                         document.getElementById('cv-email').innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d +
                             '</a>';
-                        document.getElementById('cv-phone').innerHTML = '+20 11 4968 5494';
+                        document.getElementById('cv-phone').innerHTML = '+20 11 4968 5494<br>+966 50 890 0221';
                     })();
                 </script>
                 LinkedIn: <a

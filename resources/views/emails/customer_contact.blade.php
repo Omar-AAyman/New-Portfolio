@@ -22,7 +22,7 @@
 
     <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 30px;">
         <p style="color: #888; font-size: 13px; margin-bottom: 15px;">{{ __('Need a faster response?') }}</p>
-        <a href="https://wa.me/201149685494" class="button" style="background-color: #25d366; margin-top: 0;">
+        <a href="https://wa.me/966508900221" class="button" style="background-color: #25d366; margin-top: 0;">
             {{ __('Chat on WhatsApp') }}
         </a>
     </div>

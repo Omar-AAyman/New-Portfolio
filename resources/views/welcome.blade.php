@@ -228,7 +228,8 @@
                                             var u = 'Omaraymn411',
                                                 d = 'gmail.com';
                                             document.getElementById('about-email').innerHTML = u + '@' + d;
-                                            document.getElementById('about-phone').innerText = '+20 11 4968 5494';
+                                            document.getElementById('about-phone').innerHTML =
+                                                '+20 11 4968 5494<br>+966 50 890 0221';
                                         })();
                                     </script>
                                     <li><span>{{ __('From') }}</span> : <span>{{ __('Cairo, Egypt') }}</span></li>
@@ -924,7 +925,9 @@
                                     style="direction: ltr; display: inline-block;">Loading...</span>
                                 <script>
                                     (function() {
-                                        document.getElementById('footer-phone').innerHTML = '<a href="tel:+201149685494">+20 114 968 5494</a>';
+                                        document.getElementById('footer-phone').innerHTML =
+                                            '<a href="tel:+201149685494">+20 114 968 5494</a><br>' +
+                                            '<a href="tel:+966508900221">+966 50 890 0221</a>';
                                     })();
                                 </script>
                             </div>
@@ -953,7 +956,7 @@
                                     <span class="st-social-icon"><i class="fas fa-globe"></i></span>
                                     <span class="st-icon-name">Portfolio</span>
                                 </a> --}}
-                                <a href="https://wa.me/201149685494" class="st-social-btn" target="_blank">
+                                <a href="https://wa.me/966508900221" class="st-social-btn" target="_blank">
                                     <span class="st-social-icon"><i class="fab fa-whatsapp"></i></span>
                                     <span class="st-icon-name">{{ __('WhatsApp') }}</span>
                                 </a>
