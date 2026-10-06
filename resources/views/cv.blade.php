@@ -277,12 +277,9 @@
         <!-- Summary -->
         <div class="section-header">PROFESSIONAL SUMMARY</div>
         <p>
-            Backend engineer with 3+ years shipping Laravel SaaS and fintech systems, currently based in Saudi Arabia.
-            Own multi-tenant product work (Gap Cloud ERP and Rawnaq, a KSA salon OS with ZATCA-ready finance),
-            payment integrations, and production operations (Laravel Forge, Docker, AWS, CI/CD pipelines).
-            Product UI is Filament v3 / Livewire / Blade; shipped the Rawnaq marketing site in React/TypeScript
-            with AI-assisted delivery (not a React specialist). Focus: APIs, tenant isolation, performance, and
-            production-grade backends.
+            Backend engineer with 3+ years in Laravel SaaS and fintech, based in Saudi Arabia.
+            Building multi-tenant products (Rawnaq and Gap Cloud ERP), payment integrations,
+            and production operations on Laravel Forge, Docker, AWS, and CI/CD.
         </p>
 
         <!-- Core Competencies -->
@@ -315,7 +312,7 @@
             <div class="ts-Value">Laravel Forge, Docker, AWS, GitHub Actions / pipelines, Linux servers, Git, Postman</div>
 
             <div class="ts-Label">Product UI</div>
-            <div class="ts-Value">Filament v3, Livewire, Blade, Alpine.js, Tailwind CSS, JavaScript; React/TypeScript for marketing sites (AI-assisted)</div>
+            <div class="ts-Value">Filament v3, Livewire, Blade, Alpine.js, Tailwind CSS, JavaScript</div>
         </div>
 
         <!-- Experience -->
@@ -327,10 +324,9 @@
                 <span class="exp-date">Aug 2025 – Present · Saudi Arabia</span>
             </div>
             <ul>
-                <li>Building <strong>Rawnaq</strong> (rawnaq.sa): multi-tenant salon OS for the KSA market — bookings lifecycle, finance, inventory, HR, and ZATCA-oriented e-invoicing on Panorama Core.</li>
-                <li>Product admin in Filament v3 / Livewire; shipped the public marketing site in React + TypeScript (Vite), with backend remaining Laravel.</li>
-                <li>Gap Cloud ERP: 30+ Filament resources, tenant isolation, RBAC, audit logging, Redis caching (~40% faster dashboards), queues.</li>
-                <li>Production ownership: Laravel Forge, Docker, AWS, CI/CD pipelines, and Linux servers.</li>
+                <li>Building <strong>Rawnaq</strong> (rawnaq.sa): multi-tenant salon SaaS for KSA — bookings, finance, inventory, HR, and ZATCA invoicing.</li>
+                <li>Gap Cloud ERP: Filament modules, tenant isolation, RBAC, Redis, and queues.</li>
+                <li>Production: Laravel Forge, Docker, AWS, and CI/CD.</li>
             </ul>
         </div>
 
