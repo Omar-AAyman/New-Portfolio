@@ -13,7 +13,7 @@
     <meta name="description"
         content="Omar Ayman - Backend Developer specializing in Laravel, SaaS Development, and Scalable Fintech Solutions. Building high-performance digital products.">
     <meta name="keywords"
-        content="Omar Ayman, Backend Developer, Laravel, SaaS Development, ERP Solutions, Fintech Developer, PHP, Cairo Developer">
+        content="Omar Ayman, Backend Developer, Laravel, SaaS, Filament, Fintech, PHP, Saudi Arabia, KSA">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook / LinkedIn -->
@@ -229,7 +229,7 @@
                                                 d = 'gmail.com';
                                             document.getElementById('about-email').innerHTML = u + '@' + d;
                                             document.getElementById('about-phone').innerHTML =
-                                                '+20 11 4968 5494<br>+966 50 890 0221';
+                                                '+966 50 890 0221<br>+20 11 4968 5494';
                                         })();
                                     </script>
                                     <li><span>{{ __('From') }}</span> : <span>{{ __('Cairo, Egypt') }}</span></li>
@@ -372,8 +372,9 @@
                                         @if ($project->video_url)
                                             <div class="st-lightgallery">
                                                 <a href="{{ $project->video_url }}"
-                                                    class="st-btn st-style1 st-color1 st-sm st-lightbox-item">
-                                                    <i class="fas fa-play-circle"></i> {{ __('Watch Demo') }}
+                                                    class="st-btn st-style1 st-color1 st-sm {{ str_contains($project->video_url, 'youtube') ? 'st-lightbox-item' : '' }}"
+                                                    target="_blank" rel="noopener">
+                                                    <i class="fas fa-external-link-alt"></i> {{ __('Watch Demo') }}
                                                 </a>
                                             </div>
                                         @endif
@@ -926,8 +927,8 @@
                                 <script>
                                     (function() {
                                         document.getElementById('footer-phone').innerHTML =
-                                            '<a href="tel:+201149685494">+20 114 968 5494</a><br>' +
-                                            '<a href="tel:+966508900221">+966 50 890 0221</a>';
+                                            '<a href="tel:+966508900221">+966 50 890 0221</a><br>' +
+                                            '<a href="tel:+201149685494">+20 114 968 5494</a>';
                                     })();
                                 </script>
                             </div>

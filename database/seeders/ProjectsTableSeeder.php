@@ -17,14 +17,46 @@ class ProjectsTableSeeder extends Seeder
         $projects = [
             [
                 'title' => json_encode([
-                    'en' => 'Multi-Tenant SaaS ERP',
-                    'ar' => 'منصة ERP سحابية (SaaS)',
+                    'en' => 'Rawnaq — KSA Salon SaaS',
+                    'ar' => 'رَونَق — نظام صالونات للسوق السعودي',
                 ]),
                 'role' => json_encode([
-                    'en' => 'Lead Backend Engineer',
-                    'ar' => 'قيادي هندسة واجهات خلفية (Lead Backend)',
+                    'en' => 'Backend Developer (current product)',
+                    'ar' => 'مطور الواجهة الخلفية (المنتج الحالي)',
                 ]),
-                'description' => json_encode([ // Using description as a general field, though existing data splits it
+                'description' => json_encode([
+                    'en' => 'Multi-tenant salon operating system for the Saudi market.',
+                    'ar' => 'نظام تشغيل صالونات متعدد المستأجرين للسوق السعودي.',
+                ]),
+                'problem' => json_encode([
+                    'en' => 'Salons in KSA need one system for bookings, staff, inventory, and finance — including ZATCA-ready invoicing — without a separate tool per branch.',
+                    'ar' => 'صالونات السعودية تحتاج نظامًا واحدًا للحجوزات والموظفين والمخزون والمالية بما فيها الفوترة المتوافقة مع ZATCA دون أداة منفصلة لكل فرع.',
+                ]),
+                'solution' => json_encode([
+                    'en' => 'Built on Panorama Core: multi-tenant Laravel + Filament modules (bookings lifecycle, finance, inventory, HR). Public site in React/TypeScript; production on Forge, Docker, and AWS.',
+                    'ar' => 'مبني على Panorama Core: Laravel متعدد المستأجرين ووحدات Filament (الحجوزات، المالية، المخزون، الموارد البشرية). الموقع العام بـ React/TypeScript؛ التشغيل عبر Forge وDocker وAWS.',
+                ]),
+                'outcome' => json_encode([
+                    'en' => 'Live product surface at rawnaq.sa / app.rawnaq.sa — current day-to-day work.',
+                    'ar' => 'منتج مباشر على rawnaq.sa / app.rawnaq.sa — العمل اليومي الحالي.',
+                ]),
+                'tech_stack' => json_encode(['Laravel', 'Filament v3', 'MySQL', 'ZATCA', 'Forge / AWS', 'React (marketing)']),
+                'image' => 'assets/img/portfolio/project-1-min.png',
+                'video_url' => 'https://rawnaq.sa',
+                'display_order' => 1,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'title' => json_encode([
+                    'en' => 'Gap Cloud — Multi-Tenant SaaS ERP',
+                    'ar' => 'Gap Cloud — منصة ERP سحابية (SaaS)',
+                ]),
+                'role' => json_encode([
+                    'en' => 'Backend Developer',
+                    'ar' => 'مطور الواجهة الخلفية',
+                ]),
+                'description' => json_encode([
                     'en' => 'Leading backend development for a multi-tenant SaaS ERP.',
                     'ar' => 'قيادة هندسة منصة SaaS ERP متعددة المستأجرين.',
                 ]),
@@ -40,10 +72,10 @@ class ProjectsTableSeeder extends Seeder
                     'en' => 'Serves 50+ active companies with sub-100ms dashboard response times.',
                     'ar' => 'يخدم الآن أكثر من 50 شركة نشطة مع زمن استجابة للوحة التحكم أقل من 100 مللي ثانية.',
                 ]),
-                'tech_stack' => json_encode(['Laravel', 'Filament v3', 'Livewire', 'Redis', 'MySQL']),
+                'tech_stack' => json_encode(['Laravel', 'Filament v3', 'Livewire', 'Redis', 'MySQL', 'Docker']),
                 'image' => 'assets/img/portfolio/project-1-min.png',
-                'video_url' => 'https://www.youtube.com/watch?v=LXb3EKWsInQ', // Placeholder
-                'display_order' => 1,
+                'video_url' => null,
+                'display_order' => 2,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -74,8 +106,8 @@ class ProjectsTableSeeder extends Seeder
                 ]),
                 'tech_stack' => json_encode(['Laravel', 'REST APIs', 'Docker', 'Paymob', 'Firebase']),
                 'image' => 'assets/img/portfolio/project-2-min.png',
-                'video_url' => 'https://www.youtube.com/watch?v=LXb3EKWsInQ', // Placeholder
-                'display_order' => 2,
+                'video_url' => null,
+                'display_order' => 3,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -106,8 +138,8 @@ class ProjectsTableSeeder extends Seeder
                 ]),
                 'tech_stack' => json_encode(['Laravel API', 'Sanctum', 'FCM', 'Google Maps API']),
                 'image' => 'assets/img/portfolio/project-3-min.png',
-                'video_url' => 'https://www.youtube.com/watch?v=LXb3EKWsInQ', // Placeholder
-                'display_order' => 3,
+                'video_url' => null,
+                'display_order' => 4,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

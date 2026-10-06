@@ -249,9 +249,12 @@
         <!-- Header -->
         <header>
             <h1>OMAR AYMAN MOHAMED</h1>
-            <div class="role-title">BACKEND DEVELOPER | SAAS & FINTECH SYSTEMS • LARAVEL • PHP</div>
+            <div class="role-title">BACKEND DEVELOPER | LARAVEL SAAS • FILAMENT • KSA PRODUCTION</div>
             <div class="contact-row">
-                Cairo, Egypt (Open to relocation & remote) <span>|</span> Phone: <span id="cv-phone">Loading...</span>
+                Saudi Arabia (on-site) · open to remote <span>|</span>
+                Phone: <a href="tel:+966508900221">+966 50 890 0221</a>
+                <span>|</span>
+                <a href="tel:+201149685494">+20 11 4968 5494</a>
                 <span>|</span> Email:
                 <span id="cv-email">Loading...</span><br>
                 <script>
@@ -260,7 +263,6 @@
                             d = 'gmail.com';
                         document.getElementById('cv-email').innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d +
                             '</a>';
-                        document.getElementById('cv-phone').innerHTML = '+20 11 4968 5494<br>+966 50 890 0221';
                     })();
                 </script>
                 LinkedIn: <a
@@ -275,12 +277,12 @@
         <!-- Summary -->
         <div class="section-header">PROFESSIONAL SUMMARY</div>
         <p>
-            Back-End Engineer with 3+ years of experience building scalable SaaS ERP and fintech systems using the
-            Laravel ecosystem. Proven track record designing multi-tenant architectures serving 50+ companies,
-            implementing secure multi-gateway payment infrastructures, and improving system performance by up to 40%.
-            Specialized in RESTful API design, real-time systems, caching strategies, database optimization, and complex
-            third-party integrations. Strong focus on clean architecture, scalability, security, and production-grade
-            backend systems.
+            Backend engineer with 3+ years shipping Laravel SaaS and fintech systems, currently based in Saudi Arabia.
+            Own multi-tenant product work (Gap Cloud ERP and Rawnaq, a KSA salon OS with ZATCA-ready finance),
+            payment integrations, and production operations (Laravel Forge, Docker, AWS, CI/CD pipelines).
+            Product UI is Filament v3 / Livewire / Blade; shipped the Rawnaq marketing site in React/TypeScript
+            with AI-assisted delivery (not a React specialist). Focus: APIs, tenant isolation, performance, and
+            production-grade backends.
         </p>
 
         <!-- Core Competencies -->
@@ -295,6 +297,8 @@
             <span class="skill-pill">RBAC & Security</span>
             <span class="skill-pill">Background Jobs & Queues</span>
             <span class="skill-pill">Third-Party Integrations</span>
+            <span class="skill-pill">Production: Forge · Docker · AWS · CI/CD</span>
+            <span class="skill-pill">ZATCA / KSA SaaS</span>
         </div>
 
         <!-- Technical Skills -->
@@ -307,12 +311,11 @@
             <div class="ts-Value">Paymob, Lahza, Firebase (FCM & Analytics), Google Play, Zoho CRM, MS Clarity, Maqsam
                 VoIP</div>
 
-            <div class="ts-Label">DevOps & Tools</div>
-            <div class="ts-Value">Git, GitHub, Linux, Postman, Docker (Basic), Debugging, Performance Monitoring</div>
+            <div class="ts-Label">DevOps & Cloud</div>
+            <div class="ts-Value">Laravel Forge, Docker, AWS, GitHub Actions / pipelines, Linux servers, Git, Postman</div>
 
-            <div class="ts-Label">Concepts & Frontend</div>
-            <div class="ts-Value">OOP, MVC, SOLID, Design Patterns, Agile/Scrum; Blade, Alpine.js, Tailwind CSS, JS
-            </div>
+            <div class="ts-Label">Product UI</div>
+            <div class="ts-Value">Filament v3, Livewire, Blade, Alpine.js, Tailwind CSS, JavaScript; React/TypeScript for marketing sites (AI-assisted)</div>
         </div>
 
         <!-- Experience -->
@@ -320,18 +323,14 @@
 
         <div class="exp-item">
             <div class="exp-header">
-                <span class="exp-role">Mid-Level Software Developer <span class="exp-company">– Gap Cloud (SaaS ERP
-                        Platform)</span></span>
-                <span class="exp-date">Aug 2025 – Present</span>
+                <span class="exp-role">Backend Developer <span class="exp-company">– Gap Cloud / Panorama Tech (SaaS)</span></span>
+                <span class="exp-date">Aug 2025 – Present · Saudi Arabia</span>
             </div>
             <ul>
-                <li>Architected and developed 30+ dynamic Filament v3 admin resources with real-time Livewire updates.
-                </li>
-                <li>Designed and implemented multi-tenant ERP modules serving 50+ active companies.</li>
-                <li>Reduced dashboard load time by 40% through Redis caching and query optimization.</li>
-                <li>Designed scalable database schemas ensuring tenant isolation.</li>
-                <li>Implemented RBAC systems, dynamic menus, and advanced audit logging.</li>
-                <li>Built queue-based background job processing for asynchronous operations.</li>
+                <li>Building <strong>Rawnaq</strong> (rawnaq.sa): multi-tenant salon OS for the KSA market — bookings lifecycle, finance, inventory, HR, and ZATCA-oriented e-invoicing on Panorama Core.</li>
+                <li>Product admin in Filament v3 / Livewire; shipped the public marketing site in React + TypeScript (Vite), with backend remaining Laravel.</li>
+                <li>Gap Cloud ERP: 30+ Filament resources, tenant isolation, RBAC, audit logging, Redis caching (~40% faster dashboards), queues.</li>
+                <li>Production ownership: Laravel Forge, Docker, AWS, CI/CD pipelines, and Linux servers.</li>
             </ul>
         </div>
 
