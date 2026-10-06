@@ -249,7 +249,7 @@
         <!-- Header -->
         <header>
             <h1>OMAR AYMAN MOHAMED</h1>
-            <div class="role-title">BACKEND DEVELOPER | LARAVEL SAAS • FILAMENT • KSA PRODUCTION</div>
+            <div class="role-title">BACKEND DEVELOPER | LARAVEL • FILAMENT • SAAS</div>
             <div class="contact-row">
                 Saudi Arabia (on-site) · open to remote <span>|</span>
                 Phone: <a href="tel:+966508900221">+966 50 890 0221</a>
@@ -277,9 +277,9 @@
         <!-- Summary -->
         <div class="section-header">PROFESSIONAL SUMMARY</div>
         <p>
-            Backend engineer with 3+ years in Laravel SaaS and fintech, based in Saudi Arabia.
-            Building multi-tenant products (Rawnaq and Gap Cloud ERP), payment integrations,
-            and production operations on Laravel Forge, Docker, AWS, and CI/CD.
+            Backend developer with 4+ years of Laravel work: SaaS, payments, and production.
+            Based in Saudi Arabia. Open to KSA on-site, remote, or relocating.
+            Day to day: multi-tenant apps, APIs, Filament, Forge / Docker / AWS.
         </p>
 
         <!-- Core Competencies -->
@@ -324,9 +324,10 @@
                 <span class="exp-date">Aug 2025 – Present · Saudi Arabia</span>
             </div>
             <ul>
-                <li>Building <strong>Rawnaq</strong> (<a href="https://rawnaq.on-forge.com/ar" target="_blank" rel="noopener">rawnaq.on-forge.com</a>): multi-tenant salon SaaS for KSA — bookings, finance, inventory, HR, and ZATCA invoicing.</li>
-                <li>Gap Cloud ERP: Filament modules, tenant isolation, RBAC, Redis, and queues.</li>
-                <li>Production: Laravel Forge, Docker, AWS, and CI/CD.</li>
+                <li>Multi-tenant salon SaaS for KSA: bookings, finance, inventory, HR, and e-invoicing.</li>
+                <li>Gap Cloud ERP: Filament modules, tenant isolation, RBAC, Redis, queues.</li>
+                <li>Shipped a live travel site for a Riyadh agency (bnoramatravel-sa.com).</li>
+                <li>Production on Laravel Forge, Docker, AWS, and CI/CD.</li>
             </ul>
         </div>
 
@@ -351,9 +352,9 @@
                 <span class="exp-date">Sep 2022 – Present</span>
             </div>
             <ul>
-                <li>Delivered custom backend systems and third-party integrations for startups and SMEs.</li>
-                <li>Designed secure authentication systems and scalable REST APIs.</li>
-                <li>Optimized backend infrastructure and database performance.</li>
+                <li>Built Derby Football Gym (derbyfootballgym.com): Laravel + Filament, bilingual site, bookings, memberships, member portal, session reports.</li>
+                <li>Custom backends and API integrations for SMEs.</li>
+                <li>Auth, REST APIs, and database performance work on live products.</li>
             </ul>
         </div>
 
