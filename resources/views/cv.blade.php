@@ -324,7 +324,7 @@
                 <span class="exp-date">Aug 2025 – Present · Saudi Arabia</span>
             </div>
             <ul>
-                <li>Building <strong>Rawnaq</strong> (rawnaq.sa): multi-tenant salon SaaS for KSA — bookings, finance, inventory, HR, and ZATCA invoicing.</li>
+                <li>Building <strong>Rawnaq</strong> (<a href="https://rawnaq.on-forge.com/ar" target="_blank" rel="noopener">rawnaq.on-forge.com</a>): multi-tenant salon SaaS for KSA — bookings, finance, inventory, HR, and ZATCA invoicing.</li>
                 <li>Gap Cloud ERP: Filament modules, tenant isolation, RBAC, Redis, and queues.</li>
                 <li>Production: Laravel Forge, Docker, AWS, and CI/CD.</li>
             </ul>
